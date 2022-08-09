@@ -1,0 +1,144 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+}
+
+:root{
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-vry-dark-sat-blue: hsl(229, 23%, 23%);
+  --clr-drk-gray-blue: hsl(227, 10%, 46%);
+  --clr-dark-gray: hsl(0, 0%, 59%);
+
+  --ff-primary: 'Kumbh Sans', sans-serif;
+}
+
+body{
+  overflow: hidden;
+  background-color: var(--clr-dark-cyan);
+  min-height: 100vh;
+  font-family: var(--ff-primary);
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--clr-dark-cyan);
+  background: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-position: -12rem -23rem, 50rem 30rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: .1rem .1rem 1rem var(--clr-vry-dark-sat-blue);
+  text-align: center;
+}
+
+.personal-info{
+  border-bottom: 1px solid hsl(0, 1%, 85%);
+}
+
+.card-pattern{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.profile-pic{
+  position: relative;
+  bottom: 4.5rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  height: 9rem;
+}
+
+.card-name-location{
+  position: relative;
+  bottom: 3rem;
+}
+
+.name{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.age{
+  font-weight: 500;
+  color: var(--clr-dark-gray);
+  margin-left: .5rem;
+}
+
+.location{
+  font-weight: 500;
+  color: var(--clr-dark-gray);
+  margin-top: .5rem;
+}
+
+.social-stats{
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  padding: 0rem 2rem;
+}
+
+.social-item{
+  margin: 2rem 0rem;
+}
+
+.social-count{
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.social-description{
+  font-size: .9rem;
+  color: var(--clr-dark-gray);
+  letter-spacing: .1rem;
+}
+
+
+
